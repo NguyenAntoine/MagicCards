@@ -23,16 +23,16 @@ export default class App extends React.Component {
                 dy : this.state.pan.y
             }]),
             onPanResponderRelease        : (e, gesture) => {
-                if(this.isDropZone(gesture)) {
-                    this.setState({
-                        showDraggable : false
-                    });
-                } else {
+                // if(this.isDropZone(gesture)) {
+                //     this.setState({
+                //         showDraggable : false
+                //     });
+                // } else {
                     Animated.spring(
                         this.state.pan,
                         {toValue: {x: 0, y: 0}}
                     ).start();
-                }
+                // }
             }
         });
     }
