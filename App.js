@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-    StyleSheet,
     Animated,
-    View,
+    Dimensions,
     Image,
     PanResponder,
-    Dimensions
+    StyleSheet,
+    View,
 } from 'react-native';
 
 export default class App extends React.Component {
